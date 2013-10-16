@@ -8,7 +8,9 @@ if exists('b:current_syntax')
 endif
 
 syn match conciseInteger /\i\@<![-+]\?\d\+/
+syn region conciseString start='"' skip='\\"' end='"'
 
 highlight def link conciseInteger Number
+highlight def link conciseString String
 
 let b:current_syntax = 'concise'
