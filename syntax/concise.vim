@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:    Concise
 " Maintainer:  James Anderson <me@jamesaanderson.com>
-" Latest Revision: 14 October 2013
+" Latest Revision: 16 October 2013
 
 if exists('b:current_syntax')
   finish
