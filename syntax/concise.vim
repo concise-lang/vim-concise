@@ -9,6 +9,7 @@ endif
 syn match conciseInteger /\i\@<![-+]\?\d\+/
 syn region conciseString start='"' skip='\\"' end='"'
 syn keyword conciseBoolean true false
+syn keyword conciseSpecial null
 syn match conciseComment '\v#.*$'
 syn match conciseFunction /->\|)\|(/
 syn match conciseConditional /\(if\|elsif\|else\|unless\|then\)/
@@ -16,6 +17,7 @@ syn match conciseConditional /\(if\|elsif\|else\|unless\|then\)/
 hi def link conciseInteger Number
 hi def link conciseString String
 hi def link conciseBoolean Boolean
+hi def link conciseSpecial Special
 hi def link conciseComment Comment
 hi def link conciseFunction Function
 hi def link conciseConditional Conditional
